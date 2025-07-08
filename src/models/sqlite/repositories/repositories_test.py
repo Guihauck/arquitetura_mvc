@@ -11,6 +11,7 @@ def test_list_pets():
     print()
     print(response)
 
+@pytest.mark.skip(reason="Delete de dados do banco")
 def test_delete_pets():
     name = "shrek"
     repo = PetsRepository(db_connection_handler)
