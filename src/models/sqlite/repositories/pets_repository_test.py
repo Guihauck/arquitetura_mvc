@@ -63,7 +63,6 @@ def test_list_pets_no_result():
 
     assert response == []
 
-
 def test_delete_pets_error():
     mock_connection = MockConnectionNoResult()
     repo = PetsRepository(mock_connection)
