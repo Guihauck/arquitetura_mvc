@@ -15,7 +15,7 @@ class PersonFinderController(PersonFinderControllerInterface):
     def __find_person_in_db(self, person_id: int) -> PeopleTable:
         person = self.__people_repository.get_person(person_id)
         if not person:
-            raise Exception("People not find")
+            raise Exception("People not found")
         return person
 
     def __format_response(self, person: PeopleTable) -> Dict:
